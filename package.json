@@ -10,8 +10,7 @@
   },
   "scripts": {
     "dev": "vite",
-    "build": "rimraf ./build && tsc",
-"start": "node build/index.js",
+    "build": "tsc && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
