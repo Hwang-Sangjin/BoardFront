@@ -4,6 +4,9 @@
   "version": "0.0.0",
   "type": "module",
   "proxy": "https://board-back-8248f9e2f060.herokuapp.com/",
+  "engines": {
+    "node": "18.17.1"
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
