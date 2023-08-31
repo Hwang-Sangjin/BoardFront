@@ -4,11 +4,18 @@
   "version": "0.0.0",
   "type": "module",
   "proxy": "https://board-back-8248f9e2f060.herokuapp.com/",
+  "engines": {
+    "node": "18.17.1",
+    "npm": "9.6.7"
+  },
   "scripts": {
     "dev": "vite",
-    "build": " vite build",
+    "build": "vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "serve-heroku": "vite --host 0.0.0.0 --port $PORT preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@emotion/react": "^11.11.1",
@@ -17,6 +24,7 @@
     "@mui/icons-material": "^5.14.6",
     "@mui/joy": "^5.0.0-beta.3",
     "@mui/material": "^5.14.6",
+    "@vitejs/plugin-react-swc": "^3.3.2",
     "axios": "^1.5.0",
     "localforage": "^1.10.0",
     "match-sorter": "^6.3.1",
