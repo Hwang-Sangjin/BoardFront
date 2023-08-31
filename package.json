@@ -5,7 +5,8 @@
   "type": "module",
   "proxy": "https://board-back-8248f9e2f060.herokuapp.com/",
   "engines": {
-    "node": "18.17.1"
+    "node": "18.17.1",
+    "npm" : "9.6.7"
   },
   "scripts": {
     "dev": "vite",
